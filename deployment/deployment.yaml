@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kivshnuv-deployment
+  labels:
+    app: py-demo
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: py-demo
+  template:
+    metadata:
+      labels:
+        app: py-demo
+    spec:
+      containers:
+      - name: pycontainer
+        image: vishnukoyyada03/py-webapp:0.0.0
+        ports:
+        - containerPort: 8000
+        env:
+        - name: MY_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: my-key
+        - name: ANOTHER_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: my-config
+              key: another-key

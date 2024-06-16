@@ -1,0 +1,6 @@
+it solves the problems of servies in k8s 
+-> no standard loadbalancing is done (like enterporise)
+->cloud providers are costing too much for every loadabancing service they are providing because it generates a static ip 
+
+so ingress has come ingress with ingress controller(nginx,f5,loadbaknacing companies) by using them we have to create a ingress yaml file 
+and use ngress controller.

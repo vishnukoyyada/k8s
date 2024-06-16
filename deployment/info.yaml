@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+#what kind of kubernetes apiVersion should be used?
+
+kind: Deployment
+#type of resource.
+
+metadata:
+  name: kvishnuv-demo
+  labels:
+    app: java-demo
+  #labels  will be given to each node for auto healing purpose.
+
+#data about resources.
+
+spec:
+# desired state of the resource.
+
+  replicas: 2
+  # no of replicas.
+
+  selector:
+    matchLabels:
+      app: java-demo
+  # query which able to identify the set of pods 
+
+  template:
+  #info about pod that will be created.
+    metadata:
+      labels:
+        app: java-demo
+        #labels for the pods.
+    spec:
+    #specification for containers in pod.
+      containers:
+      - name: java-demo
+        image: vishnukoyyada03/demo:v.0.1
+        ports:
+        - containerPort: 80

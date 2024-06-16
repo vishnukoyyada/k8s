@@ -1,0 +1,19 @@
+Role:set of permissions to that resources.applied to namespace.
+
+clusterrole: same way for a cluster.
+
+RoleBinding: permissions in a role to users,groups
+
+Clusterbinding: simialar to Rolebinding.
+
+Service Account: account used in apps for pods.
+
+Default Service Account: if no service account is created a default is created.
+
+in production ouath framework is used bcz they will already have already setup all the rules 
+(ex:google,github,LDAP)
+
+steps in ouath:
+idp (like generating tokens.)
+ouath2 proxy:
+K8s Api:

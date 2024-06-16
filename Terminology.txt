@@ -1,0 +1,47 @@
+->usually providers will be providing k8s distributiion similar to that of ec2ex(awsk8s)
+->in dev server or testing you can use minikube or kind || k3s
+
+Pod:
+-> defination of how to run a container.
+-> Bascially running the containers(single/Multiple) through yaml/yml.
+
+
+kubectl:cli 
+
+
+cluster: master server(control plane ) and group a worker nodes.(data plane)
+
+
+
+### Core Resources
+- Pod
+- Service
+- Namespace
+- ConfigMap
+- Secret
+- Volume
+
+### Workload Resources
+- Deployment
+- StatefulSet
+- DaemonSet
+- Job
+- CronJob
+
+### Networking Resources
+- Ingress
+- NetworkPolicy
+
+### Storage Resources
+- PersistentVolume (PV)
+- PersistentVolumeClaim (PVC)
+- StorageClass
+
+### Access Control Resources
+- Role
+- ClusterRole
+- RoleBinding
+- ClusterRoleBinding
+
+### Custom Resources
+- Custom Resource Definitions (CRDs)

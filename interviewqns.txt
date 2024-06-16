@@ -1,0 +1,21 @@
+->differeces between docker and kubernetes?
+
+->main components of kubernetes architecture?
+
+-> k8s does not provide any container runtime yes or no ?
+
+->  difference between docker swarm and k8s ?
+
+-> difference between pod and container.
+
+-> Namespace in k8s.
+
+-> what is the role of kube proxy?
+
+-> different types of services?
+
+-> what is kubelet and what is it role?
+
+-> day to day activities on k8s?
+manages clusters, setup monitor tools, pods problems,nodes problems.
+maintain worker nodes. 

@@ -1,0 +1,11 @@
+Assuming you have pods.yml file
+
+-> to create a pod 
+
+kubectl create -f pods.yml
+
+-> to list all pods.
+:kubectl get pods
+
+-> to list all pods with extra info.
+kubectl get pods -o wide

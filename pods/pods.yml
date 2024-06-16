@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: py-webapp
+spec:
+  containers:
+  - name: py-webapp
+    image: vishnukoyyada03/py-webapp:0.0.0
+    ports:
+    - containerPort: 80
+
